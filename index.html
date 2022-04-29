@@ -1,3 +1,5 @@
+<?php  include "back-end.php";?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,21 +14,38 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 
-    <title>Document</title>
+    <title>Learn Islam For Kids</title>
+    <link rel="shortcut icon" href="images/LOgo pic.png">
 </head>
 
 <body>
     <div class="navbar-fixed">
-    <nav>
-        <div class="nav-wrapper">
-            <a href="#" class="brand-logo center"><img src="images/LOgo transparent bg.png" width="60" height="60"><span id="learn">Learn Islam for Kids</span></p> </a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li class="active"><a href="index.html">Home</a></li>
+    
+
+    <nav class="nav-extended">
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo center"><img src="images/LOgo transparent bg.png" width="60" height="60"><span id="learn"></span></p> </a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li class="active"><a href="index.html">Home</a></li>
                 <li><a href="quran.html">Quran</a></li>
                 <li><a href="islam.html">Islamic Studies</a></li>
-            </ul>
-        </div>
+        </ul>
+      </div>
+      
     </nav>
+  
+    <ul class="sidenav" id="mobile-demo">
+      <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="quran.html">Quran</a></li>
+                <li><a href="islam.html">Islamic Studies</a></li>
+        </ul>
+    </ul>
+  
+    
+
+
+
 </div>
 <div id="wrapper1">
     <div id="hero">
@@ -112,7 +131,7 @@
 
     <div id="form1">
         
-            <form class="col s12">
+            <form class="col s12" method="POST" action="back-end.php" name="contactStudent">
                 <h3 id= "formHeader"style ="text-align: center;">Interested? Get In Touch </h3>
               <div class="row">
                 <div class="input-field col s6">
@@ -166,15 +185,16 @@
               <div class="row">
                 <div class="input-field col s12">
                   <i class="material-icons prefix">mode_edit</i>
-                  <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                  <textarea id="icon_prefix2" class="materialize-textarea" name="myMessage"></textarea>
                   <label for="icon_prefix2">Please write your message/ query</label>
                 </div>
               </div>
               <div class="row">
                   <div id="submitButton">
-                    <button class="btn waves-effect waves-light btn-large" type="submit" name="action">Submit
+                    <button class="btn waves-effect waves-light btn-large" type="submit" name="submit">Submit
                         <i class="material-icons right">send</i>
                       </button>
+                    
                   </div>
                 
               </div>
