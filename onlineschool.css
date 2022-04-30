@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Quicksand:wght@300;400;500;600;700&display=swap');
 *{
-    font-family: Kalam;
+    font-family: Quicksand;
 
 }
 #wrapper1{
@@ -50,6 +50,7 @@
 	
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+    font-weight: bolder;
 }
 
 @keyframes spiningLogo{
@@ -60,11 +61,14 @@ transform:rotate(360deg)
 }
 }
 #hero{
-    background-color: rgb(241, 189, 56) ;
+    background-image: url(images/school\ hero\ \(2\).jpg);
+    
     height:50%;
     width:100%;
     margin-bottom: 1%;
     display:flex;
+    background-size: cover;
+    color:white;
 }
 #hero h4{
     
@@ -75,18 +79,29 @@ transform:rotate(360deg)
 justify-content: center;
 
 }
+
+#button1 #learnMore, #submitButton #btnSubmit{
+    background: linear-gradient(to right, #0aa3a8 40%,#b68c03 51%, #ec6eb3
+    60%);
+        
+        
+}
+
 #text1{
     padding:15% 15% 15% 0;
     
 }
+
 #image{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items:center;
+    justify-content:center;
 }
 #image img{
-    width:50%;
-    height: 50%;
+    width:30%;
+    height: 30%;
+    margin: 5%;
+    z-index: 2;
 }
 
 
